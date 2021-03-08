@@ -1,0 +1,48 @@
+
+<div class="container mt-5 text-center">
+  <input hidden type="text" id="id_table" value="{$detail.id_table}">
+  <input hidden type="text" id="maximum_score" value="{$detail.maximum_score}">
+
+  <h5 class="text-muted">Regras: {$detail.rule_score}</h5>
+  <table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Nome do Time</th>
+        <th scope="col">Pontos do Time</th>
+        <th scope="col">Pontos Add</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {loop="$teamsChamp"}
+      <tr id="{$value.id_team}-line">
+        <th>{$value.id_team}</th>
+        <td>{$value.name_team}</td>
+        <td>{$value.score_team}/{$value.maximum_score}</td>
+        <td>+{$value.last_add_score}</td>
+        <td>
+          <a class="btn btn-success" href="/championship/{$value.id_team}/{$value.id_table}/victory">Vitória</a>
+          <a class="btn btn-danger" href="/championship/{$value.id_team}/{$value.id_table}/defeat">Derrota</a>
+        </td>
+      </tr>
+      {/loop}
+    </tbody>
+  </table>
+  <div class="modal fade " id="modal-victory" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="background victory">
+          <div class="modal-body victory">
+
+          </div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+<br>
+<br>
+

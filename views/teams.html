@@ -1,0 +1,47 @@
+	<div class="container-fluid text-center" id="maincontent">
+		<br>
+		<h4>
+			<i class="fas fa-adjust"></i> Times
+		</h4>
+
+
+		<div class="row-sm">
+			<div class="col-sm">
+				<br>
+				<div class="row">
+					<div class="col-sm-2">
+						<a class="btn btn-primary" href="/team/create">Cadastrar Time</a>
+					</div>
+				</div>
+				<br>
+				<br>
+				<table class="table table-dark">
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Código do Time</th>
+					      <th scope="col">Nome</th>
+					      <th scope="col">1° Jogador</th>
+					      <th scope="col">2° Jogador</th>
+					      <th scope="col">Editar</th>
+					      <th scope="col">Excluir</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	{loop="$teams"}
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>{$value.id_team}</td>
+					      <td>{$value.name_team}</td>
+					      <td>{$value.player1}</td>
+					      <td>{$value.player2}</td>
+					      <td><a href="/team/update/{$value.id_team}"><i class="fas fa-edit"></i></a></td>
+					      <td><a href="/team/delete/{$value.id_team}"><i class="fa fa-ban del" aria-hidden="true"></i></a></td>
+					    </tr>
+					    {/loop}
+					 </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+

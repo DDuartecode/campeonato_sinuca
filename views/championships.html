@@ -1,0 +1,20 @@
+
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Campeonatos</h1>
+    </div>
+
+    <div class="container">
+      
+        <div class="row">
+        	{loop="$championships"}
+          <div class="col-sm-4">
+            <a type="button" href="/championship/{$value.id_table}/details" class="btn btn-lg btn-block btn-outline-primary p-5">
+              <h5>{$value.name_table}</h5>
+            </a>
+          </div>
+         	{/loop}
+        </div>
+    </div>
+    <br>
+    <br>
+

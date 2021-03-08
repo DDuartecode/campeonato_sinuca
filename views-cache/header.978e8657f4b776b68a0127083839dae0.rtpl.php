@@ -23,7 +23,7 @@
 
     <body>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/">Torneio do Poder</a>
         <div class="collapse navbar-collapse justify-align" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">

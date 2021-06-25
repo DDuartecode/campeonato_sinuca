@@ -1,7 +1,7 @@
 <?php if(!class_exists('Rain\Tpl')){exit;}?>	<div class="container-fluid text-center" id="maincontent">
 		<br>
 		<h4>
-			<i class="fas fa-adjust"></i> Times
+			<i class="fab fa-teamspeak"></i> Times
 		</h4>
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" type="text/css" href="/../res/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/../res/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="/../res/Font-Awesome-master/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/../res/bootstrap/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="/../res/jqwidgets/styles/jqx.base.css">
      
@@ -23,7 +23,7 @@
 
     <body>
 
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/">Torneio do Poder</a>
         <div class="collapse navbar-collapse justify-align" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">

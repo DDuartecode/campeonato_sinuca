@@ -1,4 +1,4 @@
-<?php if(!class_exists('Rain\Tpl')){exit;}?>
+<?php if(!class_exists('Rain\Tpl')){exit;}?>  <div class="mt-5">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">Campeonatos</h1>
     </div>
@@ -15,6 +15,7 @@
          	<?php } ?>
         </div>
     </div>
-    <br>
-    <br>
+  </div>
+  <br>
+  <br>
 
